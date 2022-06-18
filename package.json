@@ -1,0 +1,19 @@
+{
+  "name": "flakes",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "postinstall": "lerna bootstrap",
+    "dev": "lerna run dev --parallel",
+    "dev:api": "lerna run --scope api dev",
+    "dev:ui": "lerna run --scope ui dev",
+    "dev:shared": "lerna run --scope shared dev"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "nx": "^14.3.6"
+  },
+  "dependencies": {
+    "@octokit/core": "^3.6.0"
+  }
+}
